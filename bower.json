@@ -1,0 +1,18 @@
+{
+  "name": "Secure Code Share",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jshcrowthe/scs",
+  "authors": [
+    "Josh Crowther <jshcrowthe@gmail.com>"
+  ],
+  "description": "Code sharing application for CIT 262.",
+  "main": "dist/app.js",
+  "keywords": [
+    "ssl",
+    "firebase"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angularjs": "~1.3.14"
+  }
+}

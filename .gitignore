@@ -1,0 +1,4 @@
+bower_components
+public/js/components/*
+node_modules
+.DS_store
