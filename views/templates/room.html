@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    <li x-ng-repeat="message in messages">
+    <p>{{message.sender}}: {{message.message}}</p>
+    </li>
+  </ul>
+  <div>
+    <input type="text" x-ng-model="newMessage" on-enter="addNewMessage()" />
+    <button type="button" x-ng-click="addNewMessage()">Send</button>
+  </div>
+</div>
