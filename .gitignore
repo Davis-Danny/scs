@@ -3,3 +3,4 @@ public/js/components/*
 node_modules
 .DS_store
 public/js/app.js
+npm-debug.log

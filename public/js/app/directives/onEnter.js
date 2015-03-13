@@ -5,7 +5,8 @@
   .directive('onEnter', [function() {
     var linkFunc = function(scope, el, attrs) {
       el.on('keypress', function(event) {
-        if (event.keyCode !== 13) return;
+        if (event.keyCode !== 13 || event.shiftKey) return;
+        event.preventDefault();
         scope.$apply(attrs.onEnter);
       });
     };

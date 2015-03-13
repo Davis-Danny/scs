@@ -21,6 +21,9 @@ angular
   .when('/rooms/:roomID', {
     controller: 'chatCtrl',
     templateUrl: '/template/room.html'
+  })
+  .otherwise({
+    redirectTo: '/rooms/default'
   });
 }])
 .run(['$rootScope', '$cookies', '$location', function($rootScope, $cookies, $location) {
