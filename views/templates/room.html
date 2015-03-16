@@ -1,11 +1,12 @@
 <div>
   <ul>
     <li x-ng-repeat="message in messages">
-    <p>{{message.sender}}: {{message.message}}</p>
+      <p x-ng-hide="message.codeLink">{{message.sender}}: {{message.message}}</p>
+      <p x-ng-show="message.codeLink"><i>{{message.sender}}'s <a x-ng-href="{{message.url}}" target="_blank">code snippet</a></i></p>
     </li>
   </ul>
   <div>
-    <input type="text" x-ng-model="newMessage" on-enter="addNewMessage()" />
+    <textarea type="text" x-ng-model="newMessage" on-enter="addNewMessage()"></textarea>
     <button type="button" x-ng-click="addNewMessage()">Send</button>
   </div>
 </div>
