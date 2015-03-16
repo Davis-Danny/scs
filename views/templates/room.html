@@ -1,8 +1,8 @@
 <div>
   <ul>
     <li x-ng-repeat="message in messages">
-      <p x-ng-hide="message.codeLink">{{message.sender}}: {{message.message}}</p>
-      <p x-ng-show="message.codeLink"><i>{{message.sender}}'s <a x-ng-href="{{message.url}}" target="_blank">code snippet</a></i></p>
+      <p x-ng-hide="message.codeLink">{{message.sender}}</p>
+      <message content="message.message" />
     </li>
   </ul>
   <div>
