@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+pre, code {
+  background: rgb(245, 242, 240);
+}
