@@ -1,5 +1,5 @@
 angular
-.module('chatCtrl', ['ngRoute', 'onEnter', 'ngCookies'])
+.module('chatCtrl', ['ngRoute', 'onEnter', 'ngCookies', 'messageDirective'])
 .controller('chatCtrl', ['$scope', 'dataService', '$routeParams', '$cookies', function($scope, $data, $rp, $cookies) {
   var name = $cookies.scsName;
   $scope.messages = $data.connectToRoom($rp.roomID);
